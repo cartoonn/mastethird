@@ -1,0 +1,112 @@
+TABLE OF CONTENTS 
+How it Work's 
+Network Provider Supported 
+Recommended typ of cellular network 
+Installation Instruction 
+-for Android 
+-for Iphone 
+-for Pc 
+-Quick download link for pro's 
+Available promo for network 
+-Globe 
+-Tm 
+-Tnt 
+Account Credentials 
+How to login in the website 
+Basic TroubleShooting Guide
+
+SafeCoreVPN is a virtual private network that helps people to unblock, bypass network ISP censorship.
+
+PAALALA. once na member ka na ng safecore dapat po handa tayo tanggapin kung ano man ang mangyari(kasi walang forever di natin alam bukas wala na safecore) kasi hindi po ito legal connection. is it clear? kung hindi Clear pwede naman kayo mag Load at mag register sa surfing promo's nila o kaya mag pakabit ng PLDT.
+
+How it Work's?
+
+Device with simCard -> SafecoreApp -> Internet
+
+Network Provider Supported
+
+Globe / TM / TNT
+
+Recommended type of Cellular Network
+
+4G / LTE
+
+Installation Instruction's
+
+For Android
+
+Download this app -> Click me to Download
+check for updates! update button is located within the app and choose ONLINE. (paki hanap na lang)
+Select Server from the list.
+choose the appropriate type of connection that you will be using.
+choose the available promo for your network selection. Network Promo List
+ask me for your account.
+then connect
+Cheeer's :)
+For IOS Phone / iPhone
+
+Download OPENVPN and WINRAR or WinArchiver sa appstore
+Download this configuration by long pressing and open with safari browser -> Long press me to Download
+Long press the download button and choose open with Winrar or WinARchiver
+Choose the downloaded file and open it
+Choose your appropriate type of connection.
+Select Server from the list and long press -> open with OpenVPN
+choose the available promo for your network selection. Network Promo List
+ask me for your account.
+then connect
+Cheeer's :)
+For Laptop/Desktop PC
+
+Download this app. Click me to download
+Extract nyo lng ang na download nyong file. if hindi nyo ma extract download kayo winrar para ma extract.
+Install the "TAP" naka lagay sa loub ng driver folder
+Open safecore.exe
+Select your appropriate connection type..
+Select Server from the list.
+choose the available promo for your network selection. Network Promo List
+ask me for your account.
+then connect
+Cheeer's :)
+Quick Download Link's for Pro
+
+Android -> AndroidApp 
+FOR SINGLE NETWORK CONNECTION 
+GLOBE/TM PROMO 
+TNT WATTPAD 
+TNT INSTAGRAM 
+Ios -> iosConfig
+Pc -> pcApp
+Available Promo's for network
+
+Globe
+
+TM
+
+COC5 sendto 8080 + SULITXT5 sendto 8080 = 3day's unli surfing // use network : GLOBE/TM PROMO 1 or 2
+TNT
+
+GT10 sendto 8855 + IG2 sendto 4545(x3) = 3day's with 2GB data limit per day! // use network : TNT INSTAGRAM
+GT10 sendto 8855 + WATTPAD2 sendto 4545(x3) = 3day's with 2GB data limit per day! // use network : TNT WATTPAD
+Account Credential's
+
+You can view your Expiration date.
+You can change your password.
+You can reset you Account! if your are having Authentication failed in the app.
+How to login
+
+lets assume that this is your account. The required fields in the website in order to login is Email and Password, the format for your email is "yourUsername_dg@gmail.com"
+
+ASSUMED ACCOUNT 
+username: imhandsome 
+password: 123456789
+
+Go to this site -> https://cp.safecorevpn.com/login
+Use your email -> imhandsome_dg@gmail.com
+Enter your password -> 123456789
+Basic Troubleshooting Guide
+
+if either unkown proxy or waiting for server. (possible problem is di kau naka register sa promo, wala kayong load, mali yung sim na naka on na data, if TNT wala pa kayong APN na nagawa) [ mag register sa promo{wait jofom if TM user}, dapat if anung sim selected un dn naka bukas na data, if tnt gumawa ng APN para maka connect at mawala ung data limit]
+
+Authentication failure ( either na ipit ung account mo or expired na account mo. panu ba na iipit ung account ganito un. kapag nawawala bigla ung signal ng device or humihina , tendency nyan is nadidisconnect tayo sa device but ung status natin is still connected. so mag authentication fail ung login natin kasi online pa tayo sa server.) [ mag pa extend na ng account, switch server until makapasok papasok yan hnd pwedeng hnd.]
+
+Thank you for Reading! :)
