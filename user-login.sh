@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Script Copyright www.fornesia.com
-# Mod by Abu Yazid Al-Busthami
+# Mod by jhelson15
 # ==========================
 # 
 
@@ -45,9 +45,9 @@ echo "";
 
 echo "------------------------------------------------"
 echo " Multi Login = Kill "
-echo " Cara pakai : Kill nomor PID "
+echo " Usurname : Kill number PID "
 echo "------------------------------------------------"
 
 echo "";
 
-echo "Mod by Abu Yazid Al-Busthami";
+echo "Mod by jhelson15";
