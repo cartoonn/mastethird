@@ -1,7 +1,7 @@
 #!/bin/bash
-# Script hapus user SSH
-# Created by Abu Yazid Al-Busthami
+# Script Delete user account SSH
+# Created by jhelson15
 
-read -p "Nama user SSH yang akan dihapus : " Nama
+read -p "Username SSH account to Delete : " Nama
 
 userdel -r $Nama
