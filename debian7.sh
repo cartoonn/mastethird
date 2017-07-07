@@ -59,9 +59,9 @@ apt-get update
 apt-get install neofetch
 
 echo "clear" >> .bashrc
-echo 'echo -e "Selamat datang di server $HOSTNAME"' >> .bashrc
-echo 'echo -e "Script mod by Abu Yazid Al-Busthami"' >> .bashrc
-echo 'echo -e "Ketik menu untuk menampilkan daftar perintah"' >> .bashrc
+echo 'echo -e "Thanks for using my Autoscript $HOSTNAME"' >> .bashrc
+echo 'echo -e "Script mod by jhelson15"' >> .bashrc
+echo 'echo -e "Please type menu to view option"' >> .bashrc
 echo 'echo -e ""' >> .bashrc
 
 # install webserver
@@ -70,7 +70,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 wget -O /etc/nginx/nginx.conf "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/nginx.conf"
 mkdir -p /home/vps/public_html
-echo "<pre>Setup by Rizal Hidayat | 081515292117</pre>" > /home/vps/public_html/index.html
+echo "<pre>Setup by Jhelson15 | 09496942828</pre>" > /home/vps/public_html/index.html
 wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/jhelson15/masterjhels/master/vps.conf"
 service nginx restart
 
@@ -138,7 +138,7 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/jhelson15/debian7_32bit/master/menu.sh"
+wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/menu.sh"
 wget -O usernew "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/trial.sh"
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
@@ -195,7 +195,7 @@ echo "usernew (Create new cleint)"  | tee -a log-install.txt
 echo "trial (Create new Trial)"  | tee -a log-install.txt
 echo "delete (delete user SSH)"  | tee -a log-install.txt
 echo "check (Check User Login)"  | tee -a log-install.txt
-echo "member (Cek Member SSH)"  | tee -a log-install.txt
+echo "member (Check Member SSH)"  | tee -a log-install.txt
 echo "refresh (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
 echo "reboot (Reboot VPS)"  | tee -a log-install.txt
 echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
@@ -208,8 +208,8 @@ echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Philippines (GMT +8)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Original Script by Fornesia, Rzengineer & Fawzya"  | tee -a log-install.txt
-echo "Modified by Abu Yazid Al-Busthami"  | tee -a log-install.txt
+echo "Original Script by Fornesia, Rzengineer & Fawzya & Abu Yazid Al-Busthami"  | tee -a log-install.txt
+echo "Modified by jhelson15"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalation --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
