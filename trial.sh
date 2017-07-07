@@ -1,7 +1,7 @@
 #!/bin/bash
 #Script auto create trial user SSH
-#yg akan expired setelah 1 hari
-#modified by Abu Yazid Al-Busthami
+#trial account expired 1 day
+#modified by jhelson15
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 
@@ -21,5 +21,5 @@ echo -e "Config OpenVPN (TCP 1194): http://$IP:81/client.ovpn"
 echo -e "Username: $Login"
 echo -e "Password: $Pass\n"
 echo -e "========================="
-echo -e "Mod by Abu Yazid Al-Busthami"
+echo -e "Mod by jhelson15"
 echo -e ""
