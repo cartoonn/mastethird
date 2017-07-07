@@ -1,6 +1,8 @@
 #!/bin/bash
 #Menu
-
+echo -e "Welcome to AutoscriptVPS Menu"
+echo -e ""
+echo -e "+Option+    : Description"
 echo -e "* menu      : memu"
 echo -e "* usernew   : create new SSH & OpenVPN"
 echo -e "* trial     : create new trial"
