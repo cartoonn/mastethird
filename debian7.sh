@@ -146,7 +146,7 @@ wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/us
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
-wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/masterjhels/master/info.sh"
+wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/info.sh"
 wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
