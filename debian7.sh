@@ -144,7 +144,7 @@ wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/tr
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-wget -O userlimit "https://raw.githubusercontent.com/anggasa/worm/master/userlimit.sh"
+wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
 wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/info.sh"
