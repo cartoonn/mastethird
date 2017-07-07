@@ -36,7 +36,7 @@ Apt-get install ca-certificates
 
 2. Download the script with the command:
 
-Wget https://raw.githubusercontent.com/nifira123/debian7_32bit/master/debian7.sh
+Wget https://raw.githubusercontent.com/jhelson15/masterjhels/master/debian7.sh
 
 3. Set permissions with the command:
 
