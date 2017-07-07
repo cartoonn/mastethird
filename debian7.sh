@@ -144,6 +144,7 @@ wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/tr
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
+wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
@@ -157,6 +158,8 @@ chmod +x trial
 chmod +x delete
 chmod +x check
 chmod +x member
+chmod +x Expired-user
+chmod +x userlimit
 chmod +x refresh
 chmod +x speedtest
 chmod +x info
@@ -197,6 +200,8 @@ echo "trial (Create new Trial)"  | tee -a log-install.txt
 echo "delete (delete user SSH)"  | tee -a log-install.txt
 echo "check (Check User Login)"  | tee -a log-install.txt
 echo "member (Check Member SSH)"  | tee -a log-install.txt
+echo "Expired-user (Check Expired user SSH)"  | tee -a log-install.txt
+echo "userlimit (userlimit per login SSH)"  | tee -a log-install.txt
 echo "refresh (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
 echo "reboot (Reboot VPS)"  | tee -a log-install.txt
 echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
@@ -215,6 +220,8 @@ echo ""  | tee -a log-install.txt
 echo "Log Instalation --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "VPS AUTO REBOOT EVERY 12 AM"  | tee -a log-install.txt
+echo ""  | tee -a log-install.txt
+echo "Please type menu to proceed! Thank you!..."  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
