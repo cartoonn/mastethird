@@ -144,7 +144,7 @@ wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/tr
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-wget -O status "https://raw.githubusercontent.com/zero9911/script/master/script/status"
+wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
 wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
@@ -187,7 +187,7 @@ BLOCK TORRENT PORT INSTALL
 COMPLETE 94%
 "
 #bonus block torrent
-wget https://raw.githubusercontent.com/zero9911/script/master/script/torrent.sh
+wget https://raw.githubusercontent.com/jhelson15/masterjhels/master/torrent.sh
 chmod +x  torrent.sh
 ./torrent.sh
 
