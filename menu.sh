@@ -1,8 +1,8 @@
 #!/bin/bash
 #Menu
+echo -e ""
 echo -e "Welcome to AutoscriptVPS Menu"
 echo -e "modefied by: jhelson15 contact: 09496942848"
-echo -e ""
 echo -e ""
 echo -e "+Option+    : Description"
 echo -e "* menu      : memu Description"
