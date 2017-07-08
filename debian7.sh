@@ -229,13 +229,13 @@ echo "Timezone : Asia/Philippines (GMT +8)"  | tee -a log-install.txt
 echo "IPv6     : [off]"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Original Script by Fornesia, Rzengineer & Fawzya & Abu Yazid Al-Busthami"  | tee -a log-install.txt
-echo "Modified by jhelson15"  | tee -a log-install.txt
+echo "Modified by jhelson15(09496942828)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Log Instalation --> /root/log-install.txt"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "VPS AUTO REBOOT EVERY 12 AM"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Please type menu to proceed! Thank you!..."  | tee -a log-install.txt
+echo "Please reboot to get effect the installation! Thank you!..."  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "==========================================="  | tee -a log-install.txt
 cd
