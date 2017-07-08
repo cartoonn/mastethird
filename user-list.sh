@@ -16,5 +16,5 @@ echo "-------------------------------"
 echo "Created user: $JUMLAH user"
 echo "-------------------------------"
 echo -e "Mod by jhelson15"
-echo -e "type (clear) enter then (menu) to back
+echo -e "type (clear) enter then (menu) to back."
 echo -e ""
