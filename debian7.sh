@@ -153,13 +153,14 @@ wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/inf
 wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
+mv status /usr/local/bin/
 chmod +x menu
 chmod +x usernew
 chmod +x trial
 chmod +x delete
 chmod +x check
 chmod +x member
-chmod +x status
+chmod +x  /usr/local/bin/status
 chmod +x Expired-user
 chmod +x userlimit
 chmod +x refresh
