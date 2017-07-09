@@ -10,5 +10,5 @@ userdel -r $Nama
 clear
 
 echo "Account successfully deleted!"
-echo "Type (menu) to back option!.
+echo "Type (menu) to back option!."
 
