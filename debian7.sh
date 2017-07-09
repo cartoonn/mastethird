@@ -88,7 +88,7 @@ apt-get -y install aptitude curl
 if [ "$IP" = "" ]; then
         IP=$(curl -s ifconfig.me)
 fi
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/1194.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/jhelson15/masterjhels/master/1194.conf.conf"
 service openvpn restart
 #sysctl -w net.ipv4.ip_forward=1
 #sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
