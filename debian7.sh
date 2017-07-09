@@ -78,11 +78,22 @@ service nginx restart
 wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/arieonline/autoscript/master/conf/openvpn-debian.tar"
 cd /etc/openvpn/
 tar xf openvpn.tar
+rm openvpn.tar
+service openvpn-nl restart
+openvpn-nl --remote CLIENT_IP --dev tun0 --ifconfig 10.9.8.1 10.9.8.2
 wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/1194.conf"
 service openvpn restart
+#sysctl -w net.ipv4.ip_forward=1
+#sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
+#iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+#ipforward
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
-iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+iptables -F
+iptables -t nat -F
+iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o eth0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 172.16.0.0/16 -o eth0 -j MASQUERADE
+iptables -t nat -A POSTROUTING -s 172.1.0.0/16 -o eth0 -j MASQUERADE
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
 wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/jhelson15/masterjhels/master/iptables"
 chmod +x /etc/network/if-up.d/iptables
@@ -144,7 +155,7 @@ wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/tr
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
+#wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
 wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
@@ -160,7 +171,7 @@ chmod +x trial
 chmod +x delete
 chmod +x check
 chmod +x member
-chmod +x  /usr/local/bin/status
+#chmod +x  /usr/local/bin/status
 chmod +x Expired-user
 chmod +x userlimit
 chmod +x refresh
@@ -214,7 +225,7 @@ echo "trial (Create new Trial)"  | tee -a log-install.txt
 echo "delete (delete user SSH)"  | tee -a log-install.txt
 echo "check (Check User Login)"  | tee -a log-install.txt
 echo "member (Check Member SSH)"  | tee -a log-install.txt
-echo "status (Check User Online status SSH)"  | tee -a log-install.txt
+#echo "status (Check User Online status SSH)"  | tee -a log-install.txt
 echo "Expired-user (Check Expired user SSH)"  | tee -a log-install.txt
 echo "userlimit (userlimit per login SSH)"  | tee -a log-install.txt
 echo "refresh (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
