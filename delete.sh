@@ -5,6 +5,10 @@
 member
 read -p "Type Username account SSH to Delete : " Nama
 
-userdel -r $Nama successfully deleted!
+userdel -r $Nama 
+
+clear
+
+echo "Account successfully deleted!"
 echo "Type (menu) to back option!.
 echo ""
