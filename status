@@ -1,5 +1,5 @@
 #!/bin/bash
-#MKSSHVPN AUTOSCRIPT MENU
+#JBprivateVPN AUTOSCRIPT MENU
 echo "---------------------------------------------"
 echo "BIL  USERNAME        STATUS       EXP DATE   "
 echo "---------------------------------------------"
@@ -26,4 +26,4 @@ done < /etc/passwd
 echo "---------------------------------------------"
 echo "   ONLINE : $ON       OFFLINE : $OFF     "
 echo "---------------------------------------------"
-echo -e "\e[1;33;44m[ MKSSHVPN AUTOSCRIPT ]\e[0m"
+echo -e "\e[1;33;44m[ JBPrivateVPN AUTOSCRIPT ]\e[0m"
