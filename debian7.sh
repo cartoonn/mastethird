@@ -88,11 +88,12 @@ apt-get -y install aptitude curl
 if [ "$IP" = "" ]; then
         IP=$(curl -s ifconfig.me)
 fi
-wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/jhelson15/masterjhels/master/1194.conf.conf"
+wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/1194.conf"
 service openvpn restart
 #sysctl -w net.ipv4.ip_forward=1
 #sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 #iptables -t nat -I POSTROUTING -s 192.168.100.0/24 -o eth0 -j MASQUERADE
+
 #ipforward
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
@@ -156,28 +157,13 @@ service webmin restart
 
 # download script
 cd /usr/bin
-#wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/menu.sh"
-#wget -O usernew "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
+wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/menu.sh"
+wget -O usernew "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/trial.sh"
-#wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
-#wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
-#wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-#wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
-#wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
-#install menu
-wget https://raw.githubusercontent.com/zero9911/script/master/script/menu
-wget https://raw.githubusercontent.com/zero9911/script/master/script/user-list
-wget https://raw.githubusercontent.com/zero9911/script/master/script/monssh
-wget https://raw.githubusercontent.com/zero9911/script/master/script/status
-mv menu /usr/local/bin/
-mv user-list /usr/local/bin/
-mv monssh /usr/local/bin/
-mv status /usr/local/bin/
-chmod +x  /usr/local/bin/menu
-chmod +x  /usr/local/bin/user-list
-chmod +x  /usr/local/bin/monssh
-chmod +x  /usr/local/bin/status
-cd
+wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
+wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
+wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
+wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
@@ -185,15 +171,13 @@ wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/inf
 wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
-mv status /usr/bin/
-#chmod +x menu
-#chmod +x usernew
+chmod +x menu
+chmod +x usernew
 chmod +x trial
-#chmod +x delete
-#chmod +x check
-#chmod +x member
-#chmod +x /usr/bin/status
-#chmod +x Expired-user
+chmod +x delete
+chmod +x check
+chmod +x member
+chmod +x Expired-user
 chmod +x userlimit
 chmod +x refresh
 chmod +x speedtest
@@ -246,7 +230,6 @@ echo "trial (Create new Trial)"  | tee -a log-install.txt
 echo "delete (delete user SSH)"  | tee -a log-install.txt
 echo "check (Check User Login)"  | tee -a log-install.txt
 echo "member (Check Member SSH)"  | tee -a log-install.txt
-#echo "status (Check User Online status SSH)"  | tee -a log-install.txt
 echo "Expired-user (Check Expired user SSH)"  | tee -a log-install.txt
 echo "userlimit (userlimit per login SSH)"  | tee -a log-install.txt
 echo "refresh (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
