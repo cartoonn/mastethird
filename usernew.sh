@@ -3,7 +3,7 @@
 
 read -p "Username : " Login
 read -p "Password : " Pass
-read -p "Expired (Date): " Date
+read -p "Expired (Days): " Date
 
 IP=`dig +short myip.opendns.com @resolver1.opendns.com`
 useradd -e `date -d "$Date days" +"%Y-%m-%d"` -s /bin/false -M $Login
@@ -14,7 +14,8 @@ echo -e "====Informasi SSH account===="
 echo -e "Username: $Login "
 echo -e "Password: $Pass"
 echo -e "-----------------------------"
-echo -e "Expired Days: $exp days"
+echo -e "Expired Date: $exp"
 echo -e "============================="
 echo -e "Mod by jhelson15"
+echo -e "type (clear) then enter then (menu) to back menu option."
 echo -e ""
