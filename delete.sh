@@ -11,4 +11,4 @@ clear
 
 echo "Account successfully deleted!"
 echo "Type (menu) to back option!.
-echo ""
+
