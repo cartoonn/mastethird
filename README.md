@@ -32,19 +32,11 @@ Here are the execution steps of Auto Install Script for Debian 7 32 bit or 64 bi
 
 1. Install the certificate with the command:
 
-Apt-get install ca-certificates
+apt-get install ca-certificates
 
 2. Download the script with the command:
 
-Wget https://raw.githubusercontent.com/jhelson15/masterjhels/master/debian7.sh
-
-3. Set permissions with the command:
-
-Chmod + x debian7.sh
-
-4. Finally, execute the script with the command:
-
-./debian7.sh
+wget https://raw.githubusercontent.com/jhelson15/masterjhels/master/debian7.sh && chmod +x debian7.sh && ./debian7.sh
 
 Installation takes approximately 3 - 5 minutes.
 
