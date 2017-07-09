@@ -75,12 +75,19 @@ wget -O /etc/nginx/conf.d/vps.conf "https://raw.githubusercontent.com/jhelson15/
 service nginx restart
 
 # install openvpn
-wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/arieonline/autoscript/master/conf/openvpn-debian.tar"
-cd /etc/openvpn/
-tar xf openvpn.tar
-rm openvpn.tar
+#fast setup with old keys, optional if we want new key
+cd /
+wget https://raw.githubusercontent.com/zero9911/script/master/script/ovpn.tar
+tar -xvf ovpn.tar
+rm ovpn.tar
 service openvpn-nl restart
 openvpn-nl --remote CLIENT_IP --dev tun0 --ifconfig 10.9.8.1 10.9.8.2
+#get ip address
+apt-get -y install aptitude curl
+
+if [ "$IP" = "" ]; then
+        IP=$(curl -s ifconfig.me)
+fi
 wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/rizal180499/Auto-Installer-VPS/master/conf/1194.conf"
 service openvpn restart
 #sysctl -w net.ipv4.ip_forward=1
@@ -149,14 +156,28 @@ service webmin restart
 
 # download script
 cd /usr/bin
-wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/menu.sh"
-wget -O usernew "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
+#wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/menu.sh"
+#wget -O usernew "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
 wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/trial.sh"
-wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
-wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
-wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
-wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
+#wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
+#wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
+#wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
+#wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
+#wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
+#install menu
+wget https://raw.githubusercontent.com/zero9911/script/master/script/menu
+wget https://raw.githubusercontent.com/zero9911/script/master/script/user-list
+wget https://raw.githubusercontent.com/zero9911/script/master/script/monssh
+wget https://raw.githubusercontent.com/zero9911/script/master/script/status
+mv menu /usr/local/bin/
+mv user-list /usr/local/bin/
+mv monssh /usr/local/bin/
+mv status /usr/local/bin/
+chmod +x  /usr/local/bin/menu
+chmod +x  /usr/local/bin/user-list
+chmod +x  /usr/local/bin/monssh
+chmod +x  /usr/local/bin/status
+cd
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
 wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
@@ -165,14 +186,14 @@ wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/ab
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 mv status /usr/bin/
-chmod +x menu
-chmod +x usernew
+#chmod +x menu
+#chmod +x usernew
 chmod +x trial
-chmod +x delete
-chmod +x check
-chmod +x member
-chmod +x /usr/bin/status
-chmod +x Expired-user
+#chmod +x delete
+#chmod +x check
+#chmod +x member
+#chmod +x /usr/bin/status
+#chmod +x Expired-user
 chmod +x userlimit
 chmod +x refresh
 chmod +x speedtest
