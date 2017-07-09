@@ -155,7 +155,7 @@ wget -O trial "https://raw.githubusercontent.com/jhelson15/masterjhels/master/tr
 wget -O delete "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
 wget -O check "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
 wget -O member "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-#wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
+wget -O status "https://raw.githubusercontent.com/jhelson15/masterjhels/master/status"
 wget -O Expired-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
 wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
 wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
@@ -164,14 +164,14 @@ wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/inf
 wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
-mv status /usr/local/bin/
+mv status /usr/bin/
 chmod +x menu
 chmod +x usernew
 chmod +x trial
 chmod +x delete
 chmod +x check
 chmod +x member
-#chmod +x  /usr/local/bin/status
+chmod +x /usr/bin/status
 chmod +x Expired-user
 chmod +x userlimit
 chmod +x refresh
