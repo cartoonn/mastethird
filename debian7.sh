@@ -76,11 +76,9 @@ service nginx restart
 
 # install openvpn
 #fast setup with old keys, optional if we want new key
-cd /
-wget https://raw.githubusercontent.com/zero9911/script/master/script/ovpn.tar
-tar -xvf ovpn.tar
-rm ovpn.tar
-service openvpn-nl restart
+wget -O /etc/openvpn/openvpn.tar "https://raw.github.com/arieonline/autoscript/master/conf/openvpn-debian.tar"
+cd /etc/openvpn/
+tar xf openvpn.tar
 openvpn-nl --remote CLIENT_IP --dev tun0 --ifconfig 10.9.8.1 10.9.8.2
 #get ip address
 apt-get -y install aptitude curl
