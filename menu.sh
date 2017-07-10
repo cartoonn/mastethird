@@ -17,7 +17,7 @@ echo -e "*      Please Type [1-4] on Menu: Sample: 1         *"
 echo -e "*****************************************************"
 echo -e "-----------------------------------------------------"
 echo -e "                   Server Menu                       " 
-echo -e "          OPTION
+echo -e "                      OPTION"
 echo -e "refresh     : restart service dropbear, webmin"
 echo -e "                squid3, openvpn dan ssh"
 echo -e "speedtest   : speedtest VPS"
