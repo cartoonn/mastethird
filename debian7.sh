@@ -142,14 +142,14 @@ wget -O menu "https://raw.githubusercontent.com/jhelson15/masterjhels/master/men
 wget -O 1 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/usernew.sh"
 wget -O 2 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/trial.sh"
 wget -O 3 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/delete.sh"
-wget -O 4 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
-wget -O 5 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
-wget -O 6 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
-wget -O 7 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
-wget -O 8 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
-wget -O 9 "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
-wget -O 10 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/info.sh"
-wget -O 11 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
+wget -O 4 "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-list.sh"
+wget -O check-user "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-login.sh"
+wget -O user-expired "https://raw.githubusercontent.com/jhelson15/masterjhels/master/user-expired.sh"
+wget -O userlimit "https://raw.githubusercontent.com/jhelson15/masterjhels/master/userlimit.sh"
+wget -O refresh "https://raw.githubusercontent.com/jhelson15/masterjhels/master/refresh.sh"
+wget -O speedtest "https://raw.githubusercontent.com/ForNesiaFreak/FNS_Debian7/fornesia.com/null/speedtest_cli.py"
+wget -O info "https://raw.githubusercontent.com/jhelson15/masterjhels/master/info.sh"
+wget -O about "https://raw.githubusercontent.com/jhelson15/masterjhels/master/about.sh"
 echo "0 0 * * * root /usr/bin/reboot" > /etc/cron.d/reboot
 echo "* * * * * service dropbear restart" > /etc/cron.d/dropbear
 chmod +x menu
@@ -157,13 +157,13 @@ chmod +x 1
 chmod +x 2
 chmod +x 3
 chmod +x 4
-chmod +x 5
-chmod +x 6
-chmod +x 7
-chmod +x 8
-chmod +x 9
-chmod +x 10
-chmod +x 11
+chmod +x check-user
+chmod +x user-expired
+chmod +x userlimit
+chmod +x refresh
+chmod +x speedtest
+chmod +x info
+chmod +x about
 
 # finishing
 cd
@@ -206,11 +206,11 @@ echo ""  | tee -a log-install.txt
 echo "Script"  | tee -a log-install.txt
 echo "------"  | tee -a log-install.txt
 echo "menu (Menu)"  | tee -a log-install.txt
-echo "usernew (Create new cleint)"  | tee -a log-install.txt
-echo "trial (Create new Trial)"  | tee -a log-install.txt
-echo "delete (delete user SSH)"  | tee -a log-install.txt
-echo "check (Check User Login)"  | tee -a log-install.txt
-echo "member (Check Member SSH)"  | tee -a log-install.txt
+echo "1) Adduser (Create new cleint)"  | tee -a log-install.txt
+echo "2) Trial (Create new Trial)"  | tee -a log-install.txt
+echo "3) Delete (delete user SSH)"  | tee -a log-install.txt
+echo "4) Userlist (Check Member SSH)"  | tee -a log-install.txt
+echo "check-user (Check User Login)"  | tee -a log-install.txt
 echo "Expired-user (Check Expired user SSH)"  | tee -a log-install.txt
 echo "userlimit (userlimit per login SSH)"  | tee -a log-install.txt
 echo "refresh (Restart Service dropbear, webmin, squid3, openvpn dan ssh)"  | tee -a log-install.txt
@@ -219,7 +219,7 @@ echo "speedtest (Speedtest VPS)"  | tee -a log-install.txt
 echo "info (System info)"  | tee -a log-install.txt
 echo "about (Information script auto install)"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "Fitur lain"  | tee -a log-install.txt
+echo "Feature login"  | tee -a log-install.txt
 echo "----------"  | tee -a log-install.txt
 echo "Webmin   : http://$MYIP:10000/"  | tee -a log-install.txt
 echo "Timezone : Asia/Philippines (GMT +8)"  | tee -a log-install.txt
