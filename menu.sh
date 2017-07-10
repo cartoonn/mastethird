@@ -3,11 +3,11 @@
 
 clear
 
-echo -e "****************************************************"
-echo -e "*         Welcome to AutoscriptVPS Menu            *"                                 
-echo -e "*   modefied by: jhelson15 contact: 09496942848    *"
-echo -e "****************************************************"
-echo -e "###################### menu ########################"
+echo -e "*****************************************************"
+echo -e "*         Welcome to AutoscriptVPS Menu             *"                                 
+echo -e "*   modefied by: jhelson15 contact: 09496942848     *"
+echo -e "*****************************************************"
+echo -e "###################### menu #########################"
 echo -e "1) Add-User    : Add new user client"
 echo -e "2) Trial       : Auto generate trial valid for 1day"
 echo -e "3) Delete      : Delete user"
