@@ -40,4 +40,4 @@ wget https://raw.githubusercontent.com/jhelson15/masterjhels/master/debian7.sh &
 
 Installation takes approximately 3 - 5 minutes.
 
-credit ot : Abu Yazid Al-Busthami
+credit to : Abu Yazid Al-Busthami
