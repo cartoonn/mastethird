@@ -2,7 +2,8 @@
 # Script Delete user account SSH
 # Created by jhelson15
 
-member
+3
+
 read -p "Type Username account to Delete : " Nama
 
 userdel -r $Nama 
