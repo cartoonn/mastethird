@@ -2,6 +2,7 @@
 #Menu
 
 clear
+info
 
 echo -e "*****************************************************"
 echo -e "*         Welcome to AutoscriptVPS Menu             *"                                 
@@ -21,7 +22,6 @@ echo -e "                      OPTION"
 echo -e "refresh     : restart service dropbear, webmin"
 echo -e "                squid3, openvpn dan ssh"
 echo -e "speedtest   : speedtest VPS"
-echo -e "info        : System information"
 echo -e "about       : info script auto install"
 echo -e "reboot      : reboot VPS"
 echo -e "exit        : Open thru Putty/Connecbot/"
