@@ -1,9 +1,6 @@
 #!/bin/bash
 #Menu
-
 clear
-echo -e""
-
 echo -e " *****************************************************"
 echo -e " *         Welcome to AutoscriptVPS Menu             *"                                 
 echo -e " *   modefied by: jhelson15 contact: 09496942848     *"
