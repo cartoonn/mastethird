@@ -83,7 +83,7 @@ service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
 iptables -t nat -I POSTROUTING -s 10.8.0.0/16 -o eth0 -j MASQUERADE
-iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o venet0 -j SNAT --to-source `curl ipecho.net/plain
+iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o venet0 -j SNAT --to-source `curl ipecho.net/plain`
 iptables-save > /etc/iptables_yg_baru_dibikin.conf
 wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/nifira123/debian7_32bit/master/iptables"
 chmod +x /etc/network/if-up.d/iptables
