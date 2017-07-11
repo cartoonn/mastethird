@@ -82,8 +82,8 @@ wget -O /etc/openvpn/1194.conf "https://raw.githubusercontent.com/rizal180499/Au
 service openvpn restart
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
-sysctl -w net.ipv4.conf.icmp_echo_ignore_all = 1
-sed -i 's/#nnet.ipv4.conf.icmp_echo_ignore_all = 1/nnet.ipv4.conf.icmp_echo_ignore_all = 1/g' /etc/sysctl.conf
+sysctl -w net.ipv4.conf.icmp_echo_ignore_all=1
+sed -i 's/#nnet.ipv4.conf.icmp_echo_ignore_all=1/nnet.ipv4.conf.icmp_echo_ignore_all=1/g' /etc/sysctl.conf
 iptables -t nat -I POSTROUTING -s 10.8.0.0/16 -o eth0 -j MASQUERADE
 iptables -t nat -A POSTROUTING -s 10.8.0.0/16 -o venet0 -j SNAT --to-source `curl ipecho.net/plain
 echo 1 > /proc/sys/net/ipv4/ip_forward
