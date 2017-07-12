@@ -234,6 +234,6 @@ echo "VPS AUTO REBOOT EVERY 12 AM"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "Please reboot to get effect the installation! Thank you!..."  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
-echo "==========================================="  | tee -a log-install.txt
+echo "=======================DONE========================"  | tee -a log-install.txt
 cd
 rm -f /root/debian7.sh
