@@ -88,6 +88,7 @@ wget -O /etc/network/if-up.d/iptables "https://raw.githubusercontent.com/nifira1
 chmod +x /etc/network/if-up.d/iptables
 service openvpn restart
 
+
 #konfigurasi openvpn
 cd /etc/openvpn/
 wget -O /etc/openvpn/client.ovpn "https://raw.githubusercontent.com/nifira123/debian7_32bit/master/client-1194.conf"
