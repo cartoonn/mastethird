@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Script Copyright www.fornesia.com
-# Edited by Jhelson15
+# Script Copyright www.fornesia.com @ credit to : Abu Yazid Al-Busthami
+# mod by Jhelson15
 # ==================================================
 # 
 
