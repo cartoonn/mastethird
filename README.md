@@ -1,8 +1,6 @@
 # debian7_32bit
 Script Auto Install SSH dan OpenVPN untuk VPS Debian 7 32 bit dn 64 bit
 
-http://www.masarif.tk/2017/06/script-auto-install-ssh-vpn-untuk-vps.html
-
 In this post I will share an auto install SSH & OpenVPN script for Debian 7 32 bit and 64 bit VPS.
 
 This script I modified from the script made fornesia and rzengineer.
